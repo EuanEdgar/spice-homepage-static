@@ -6,6 +6,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <aside class="logo">
+    <a href="#">
+      <img src="assets/spice-logo.png">
+    </a>
+  </aside>
+  <aside id="jump-top">
+    <p>^</p>
+  </aside>
   <article class="hero-text">
     <div>
       <h1>Spicerack are an independant creative technology agency.</h1>
@@ -48,5 +56,11 @@
     </div>
 
   </footer>
+
+  <script type="text/javascript">
+  document.getElementById('jump-top').addEventListener('click', function(){
+    window.scrollTo(0, 0);
+  });
+  </script>
 </body>
 </html>
