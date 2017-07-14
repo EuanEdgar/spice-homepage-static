@@ -100,10 +100,11 @@ article {
           color: #674db2; }
 
 footer {
-  height: 40vh;
+  height: 50vh;
   min-height: 300px !important;
   background-color: #2f3033;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   footer h1:first-child {
     margin-top: 0;
     padding-top: 20px; }
@@ -118,14 +119,27 @@ footer {
   footer p {
     width: 80%;
     margin: auto; }
-  footer div p {
-    display: inline-block;
-    width: auto;
-    height: 14vh; }
-    footer div p:first-child {
-      margin-right: 10vw; }
-    footer div p:last-child {
-      margin-left: 10vw; }
+  footer div {
+    margin-top: 100px; }
+    footer div p {
+      display: inline-block;
+      width: auto; }
+      footer div p:first-child {
+        margin-right: 10vw; }
+      footer div p:last-child {
+        margin-left: 10vw; }
+  footer section {
+    position: absolute;
+    bottom: 30px;
+    width: 100%; }
+    footer section::before {
+      content: '';
+      display: block;
+      border-top: 2px solid white;
+      margin-bottom: auto;
+      height: 30px;
+      width: 90vw;
+      margin: 0 5vw; }
 
 @media screen and (min-height: 1081px) {
   article.hero-text div {

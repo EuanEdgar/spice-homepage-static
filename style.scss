@@ -157,10 +157,11 @@ article{
 }
 
 footer{
-  height: 40vh;
+  height: 50vh;
   min-height: 300px !important;
   background-color: #2f3033;
   text-align: center;
+  position: relative;
 
   h1:first-child{
     margin-top: 0;
@@ -183,10 +184,11 @@ footer{
   }
 
   div{
+    margin-top: 100px;
+
     p{
       display: inline-block;
       width: auto;
-      height: 14vh;
 
       &:first-child{
         margin-right: 10vw;
@@ -195,6 +197,22 @@ footer{
       &:last-child{
         margin-left: 10vw;
       }
+    }
+  }
+
+  section{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+
+    &::before{
+      content: '';
+      display: block;
+      border-top: 2px solid white;
+      margin-bottom: auto;
+      height: 30px;
+      width: 90vw;
+      margin: 0 5vw;
     }
   }
 }
@@ -210,19 +228,3 @@ footer{
     }
   }
 }
-
-// @media screen and (max-height: 1080px){
-//   article.portfolio{
-//     div{
-//       padding-top: 3%;
-//     }
-//   }
-// }
-
-// @media screen and (max-height: 840px){
-//   article.portfolio{
-//     div{
-//       padding-top: 1%;
-//     }
-//   }
-// }
