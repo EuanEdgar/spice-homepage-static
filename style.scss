@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.3vh;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+article{
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  position: relative;
+
+  div{
+    position: absolute;
+
+    h1, h2, a{
+      text-transform: uppercase;
+    }
+  }
+
+  &.hero-text{
+    background-image: url(assets/hero.jpeg);
+    text-align: center;
+
+    div{
+      font-size: 130%;
+      top: 10%;
+      left: 25%;
+      width: 50%;
+
+      h1, h2{
+        margin-bottom: 12vh;
+
+        &:nth-child(3){
+          width: 90%;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+
+  &.digital-campaigns, &.websites-platforms{
+
+    div{
+      width: 35%;
+      top: 30%;
+      left: 3%;
+
+      h1{
+        font-size: 200%;
+      }
+
+      p{
+        font-size: 120%;
+      }
+
+      a{
+        display: inline-block;
+        font-size: 150%;
+        padding: 10px;
+        border: 3px solid white;
+        margin-top: 7%;
+
+        &:hover{
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  &.digital-campaigns{
+    background-image: url(assets/digital-campaigns.jpeg);    
+
+    div{
+      a{
+        &:hover{
+          color: #88684f;
+        }
+      }
+    }
+  }
+
+  &.websites-platforms{
+    background-image: url(assets/websites-platforms.jpeg);
+
+    div{
+      a{
+        &:hover{
+          color: #d8d6ad;
+        }
+      }
+    }
+  }
+
+  &.portfolio{
+    height: 30vh;
+    min-height: 300px !important;
+    background-color: #674db2;
+    text-align: center;
+
+    div{
+      position: relative;
+      padding-top: 5%;
+      a{
+        display: inline-block;
+        font-size: 150%;
+        padding: 10px;
+        border: 3px solid white;
+        margin-top: 1%;
+
+        &:hover{
+          background-color: white;
+          color: #674db2;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  height: 40vh;
+  min-height: 300px !important;
+  background-color: #2f3033;
+}
+
+@media screen and (min-height: 1081px){
+  article.hero-text{
+    div{
+      top: 8%;
+
+      h1, h2{
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+// @media screen and (max-height: 1080px){
+//   article.portfolio{
+//     div{
+//       padding-top: 3%;
+//     }
+//   }
+// }
+
+// @media screen and (max-height: 840px){
+//   article.portfolio{
+//     div{
+//       padding-top: 1%;
+//     }
+//   }
+// }
