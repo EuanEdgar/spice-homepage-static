@@ -131,6 +131,43 @@ footer{
   height: 40vh;
   min-height: 300px !important;
   background-color: #2f3033;
+  text-align: center;
+
+  h1:first-child{
+    margin-top: 0;
+    padding-top: 20px;
+
+    &::after{
+      content: "";
+      width: 20%;
+      left:40%;
+      margin-top: 1%;
+      display: block;
+      position: absolute;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  p{
+    width: 80%;
+    margin: auto;
+  }
+
+  div{
+    p{
+      display: inline-block;
+      width: auto;
+      height: 14vh;
+
+      &:first-child{
+        margin-right: 10vw;
+      }
+
+      &:last-child{
+        margin-left: 10vw;
+      }
+    }
+  }
 }
 
 @media screen and (min-height: 1081px){
